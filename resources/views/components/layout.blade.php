@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite(['resources/js/app.js', 'resources/css/app.css'])
+    
     <title>Pixel Positions</title>
 </head>
-<body class="bg-black text-white">
+<body class="bg-black text-white font-hanken-grotesk">
     <div class="px-10">
         <nav class="flex justify-between items-center py-4 border-b border-white/20">
             <div>
@@ -24,7 +25,7 @@
                 <a href="">Post a Job</a>
             </div>
         </nav>
-        <main class="mt-10 max-w-[986px]">
+        <main class="mt-10 max-w-[986px] mx-auto">
             {{ $slot }}
         </main>
     </div>
